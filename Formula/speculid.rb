@@ -10,7 +10,7 @@ class Speculid < Formula
   sha256 "7402c76f832fa9427fe5474b87d3858452b49f3702c3cb529c56511522d1f252"
 
   # depends_on "cmake" => :build
-  depends_on "inkscape"
+  depends_on "homebrew/gui/inkscape"
   depends_on "imagemagick"
   depends_on :xcode => :build
   depends_on :macos => :yosemite
