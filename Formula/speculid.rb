@@ -1,6 +1,5 @@
 # Documentation: https://github.com/Homebrew/brew/blob/master/docs/Formula-Cookbook.md
 #                http://www.rubydoc.info/github/Homebrew/brew/master/Formula
-# PLEASE REMOVE ALL GENERATED COMMENTS BEFORE SUBMITTING YOUR PULL REQUEST!
 
 class Speculid < Formula
   desc "Create Raster Images for Xcode Assets"
@@ -16,11 +15,10 @@ class Speculid < Formula
 
   def install
     xcodebuild "-workspace", "speculid.xcworkspace", "-scheme", "Speculid", "-derivedDataPath", buildpath, "build", "-configuration", "Release", "CODE_SIGNING_REQUIRED=NO"
-
     prefix.install "#{buildpath}/Build/Products/Release/Speculid.app"
     bin.install_symlink prefix/"Speculid.app/Contents/MacOS/Speculid" => "speculid"
   end
-  
+
   test do
     # `test do` will create, run in and delete a temporary directory.
     #
