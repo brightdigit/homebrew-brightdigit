@@ -29,6 +29,6 @@ class Speculid < Formula
     #
     # The installed folder is not in the path, so use the entire path to any
     # executables being tested: `system "#{bin}/program", "do", "something"`.
-    xcodebuild "-workspace", "speculid.xcworkspace", "-scheme", "Speculid", "test"
+    system "#{bin}/speculid", "-h"
   end
 end
