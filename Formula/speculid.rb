@@ -14,7 +14,7 @@ class Speculid < Formula
   depends_on :macos => :yosemite
 
   def install
-    xcodebuild "-workspace", "speculid.xcworkspace", "-scheme", "Speculid", "-derivedDataPath", buildpath, "build", "-configuration", "Release", "CODE_SIGNING_REQUIRED=NO"
+    xcodebuild "-workspace", "speculid.xcworkspace", "-scheme", "Speculid", "-derivedDataPath", buildpath, "build", "-configuration", "Release", "SYMROOT=build", "CODE_SIGNING_REQUIRED=NO"
     prefix.install "#{buildpath}/Build/Products/Release/Speculid.app"
     bin.install_symlink prefix/"Speculid.app/Contents/MacOS/Speculid" => "speculid"
   end
