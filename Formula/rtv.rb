@@ -5,12 +5,14 @@ class Rtv < Formula
   homepage "https://github.com/michael-lazar/rtv"
   url "https://files.pythonhosted.org/packages/d6/55/fd4553adc0050b4da3bff9bd0c57bcee3d56da23100b58e2c2570e533ab2/rtv-1.12.1.tar.gz"
   sha256 "784ce662e96c81280d8c6daf67d3ff437c3eedd5ed9825c6b38a0a5677497a86"
+  revision 1
+
   head "https://github.com/michael-lazar/rtv.git"
 
   bottle do
-    sha256 "ad7e6a805a7155af7aeae92de6ff1d813b4951cc053d0ca704433bfac0b959a2" => :sierra
-    sha256 "2d100261f851e470d8ae88ab0a9796afe23d324e324748c75d20b7c35e1857d4" => :el_capitan
-    sha256 "56f2c2b6e580c6be8eae4cc4eb83fb18481a9ddebabba76a66d0c8512c8100e2" => :yosemite
+    sha256 "7ecddfe59b37da028296404085f393f7ee7849e7c2451a79d1caad10b6ba47fd" => :sierra
+    sha256 "f21790522f612cdd6521ee974ef2d3ce1f60460ef569ace075dc6cdf23945a70" => :el_capitan
+    sha256 "fb467f2ac99157d207f7bfe3da428b57ff7739875f4abe1b21475057bc80a23b" => :yosemite
   end
 
   depends_on :python3
