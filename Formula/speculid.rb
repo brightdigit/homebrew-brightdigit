@@ -1,7 +1,7 @@
 class Speculid < Formula
   desc "Easily Build Xcode Image and App Icon Assets from Graphic Files."
   homepage "http://www.speculid.com"
-  url "https://github.com/brightdigit/speculid/archive/1.0.0-alpha13.tar.gz"
+  url "https://github.com/brightdigit/speculid/archive/1.0.0-alpha14.tar.gz"
   version "1.0.0-alpha14"
   sha256 "a70eaaaa9ae696b16724c2c3d1225eb6961257fe7e9534ab1b6f7fa38033c193"
   head "https://github.com/brightdigit/speculid.git", :branch => "release/1.0.0"
