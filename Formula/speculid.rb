@@ -10,7 +10,7 @@ class Speculid < Formula
 
   depends_on "homebrew/gui/inkscape"
   depends_on "imagemagick"
-  depends_on :xcode => :build
+  depends_on :xcode => ["8.0", :build]
   depends_on :macos => :yosemite
 
   def install
