@@ -1,6 +1,9 @@
 language: objective-c
 osx_image: xcode8
 before_install:
+  - brew remove --force $(brew list)
+  - brew cleanup -s
+  - rm -rf $(brew --cache)
   - brew update
 install:
   - mkdir -p $(brew --repo)/Library/Taps/travis
