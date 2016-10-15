@@ -3,7 +3,7 @@ class Speculid < Formula
   homepage "http://www.speculid.com"
   url "https://github.com/brightdigit/speculid/archive/1.0.0-beta1.tar.gz"
   version "1.0.0-beta1"
-  sha256 "287c36011b597fa73d6a7c250128096be60808f59d1b6affe0150febf4ea8427"
+  sha256 "9d570770b38c73f31c8d6949efb9334e614b7f0dd5ecdbc9f65e39037696fc0d"
   head "https://github.com/brightdigit/speculid.git", :branch => "release/1.0.0"
 
   option "with-debug", "Compile Speculid with debug options enabled"
