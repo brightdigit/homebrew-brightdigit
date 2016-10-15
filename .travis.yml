@@ -16,5 +16,5 @@ env:
 script:
   - rubocop --config=$(brew --repo)/Library/.rubocop.yml Formula/$PACKAGE.rb
   - brew audit $PACKAGE
-  - brew install -v $PACKAGE
+  - brew install $PACKAGE
   - brew test $PACKAGE
