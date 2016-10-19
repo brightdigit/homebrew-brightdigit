@@ -1,9 +1,9 @@
 class Speculid < Formula
   desc "Easily Build Xcode Image and App Icon Assets from Graphic Files."
   homepage "http://www.speculid.com"
-  url "https://github.com/brightdigit/speculid/archive/1.0.0-beta1.tar.gz"
-  version "1.0.0-beta1"
-  sha256 "9d570770b38c73f31c8d6949efb9334e614b7f0dd5ecdbc9f65e39037696fc0d"
+  url "https://github.com/brightdigit/speculid/archive/1.0.0-beta2.tar.gz"
+  version "1.0.0-beta2"
+  sha256 "f40101408dfeb01ea3e67c832cb50902aa3b8c5cd418659f8d2463fefc09af42"
   head "https://github.com/brightdigit/speculid.git", :branch => "release/1.0.0"
 
   option "with-debug", "Compile Speculid with debug options enabled"
