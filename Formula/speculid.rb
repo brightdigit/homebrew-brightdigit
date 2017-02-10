@@ -7,7 +7,6 @@ class Speculid < Formula
 
   option "with-debug", "Compile Speculid with debug options enabled"
 
-  depends_on "homebrew/gui/inkscape"
   depends_on "imagemagick"
   depends_on :xcode => ["8.0", :build]
   depends_on :macos => :yosemite
