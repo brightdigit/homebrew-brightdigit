@@ -1,34 +1,13 @@
-class Speculid < Formula
-  desc "Easily Build Xcode Image and App Icon Assets from Graphic Files."
-  homepage "http://www.speculid.com"
-  url "https://github.com/brightdigit/speculid/archive/1.0.2.tar.gz"
-  sha256 "72db593bf2b2bb4d93a35c33c289ce68e9ddc370267db2e1a89b6a29475df819"
-  head "https://github.com/brightdigit/speculid.git", :branch => "develop"
+cask 'speculid' do
+  version '2.0.0-alpha.3'
+  sha256 'a42856845a422893e0493638c8ae8f6ea282b74a80075474f527836a4d5ae605'
 
-  option "with-debug", "Compile Speculid with debug options enabled"
+  # github.com/brightdigit/Speculid was verified as official when first introduced to the cask
+  url 'https://github.com/brightdigit/Speculid/releases/download/v2.0.0-alpha.3/Speculid.zip'
+  appcast 'https://github.com/brightdigit/Speculid/releases.atom'
+  name 'Speculid'
+  homepage 'https://speculid.com/'
 
-  depends_on "imagemagick"
-  depends_on :xcode => ["8.0", :build]
-  depends_on :macos => :yosemite
-
-  def install
-    configuration = "Release"
-
-    if build.with? "debug"
-      configuration = "Debug"
-    end
-
-    xcodebuild "-workspace", "speculid.xcworkspace", "-scheme", "Speculid Application", "-derivedDataPath", buildpath, "build", "-configuration", configuration, "SYMROOT=#{buildpath}/Build/Products", "CODE_SIGNING_REQUIRED=NO"
-    system "zip", "-r", "examples.zip", "examples"
-    prefix.install "examples.zip"
-    prefix.install "shasum.sh"
-    prefix.install "#{buildpath}/Build/Products/#{configuration}/Speculid.app"
-    bin.install_symlink prefix/"Speculid.app/Contents/MacOS/Speculid" => "speculid"
-  end
-
-  test do
-    system "unzip", "#{prefix}/examples.zip", "-d", testpath
-    assert_equal shell_output("cat #{testpath}/examples/shasum"), shell_output("#{prefix}/shasum.sh #{bin}/speculid #{testpath}/examples/Assets")
-    system "#{bin}/speculid", "--version"
-  end
+  app 'Speculid.App'
+  binary "#{appdir}/Speculid.App/Contents/SharedSupport/speculid"
 end

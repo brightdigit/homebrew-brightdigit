@@ -1,2 +1,2 @@
 #!/bin/bash
-curl -L -s https://github.com/brightdigit/speculid/archive/$1.tar.gz | shasum -a 256 | cut -c-64
+#curl -L  https://github.com/brightdigit/Speculid/releases/download/v2.0.0-alpha.3/Speculid.zip | shasum --algorithm 256
