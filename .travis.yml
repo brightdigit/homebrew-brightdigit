@@ -13,6 +13,6 @@ install:
 env:
   - PACKAGE=speculid
 script:
-  - brew cask audit Formula/speculid.rb --download
-  - brew cask install Formula/speculid.rb 
-  - brew cask style Formula/speculid.rb
+  - brew cask audit Casks/speculid.rb --download
+  - brew cask install Casks/speculid.rb 
+  - brew cask style Casks/speculid.rb
