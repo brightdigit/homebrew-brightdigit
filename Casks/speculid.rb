@@ -8,6 +8,6 @@ cask 'speculid' do
   name 'Speculid'
   homepage 'https://speculid.com/'
 
-  app 'Speculid'
+  app 'Speculid.app'
   binary "#{appdir}/Speculid.App/Contents/SharedSupport/speculid"
 end
