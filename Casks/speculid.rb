@@ -1,9 +1,9 @@
 cask 'speculid' do
-  version '2.0.0-beta.4'
-  sha256 'a9fce27930d1fef76d01f4f90880d3b822c8082f853379179785f5afe24e9df4'
+  version '2.0.0'
+  sha256 'a5c65adccc7953cdce4e53bf3b4f6fdad5a7734ebc9c24e5ee3bcf1344eca7b2'
 
   # github.com/brightdigit/Speculid was verified as official when first introduced to the cask
-  url 'https://github.com/brightdigit/Speculid/releases/download/v2.0.0-beta.4/Speculid.zip'
+  url 'https://github.com/brightdigit/Speculid/releases/download/v2.0.0/Speculid.zip'
   appcast 'https://github.com/brightdigit/Speculid/releases.atom'
   name 'Speculid'
   homepage 'https://speculid.com/'
